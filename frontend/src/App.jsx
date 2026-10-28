@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react'
 import './App.css'
 
-const API_URL = 'http://localhost:5001/api'
+const API_URL =
+  import.meta.env.VITE_API_URL || 'http://localhost:5001/api'
 
 const times = ['10:00 AM', '1:30 PM', '5:00 PM', '8:30 PM']
 
